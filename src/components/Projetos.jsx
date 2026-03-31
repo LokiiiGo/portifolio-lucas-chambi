@@ -77,7 +77,7 @@ function Projetos() {
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-foreground">
                     {projeto.title}
                   </h3>
-                  <p className="text-zinc-400 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                  <p className="text-zinc-100 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
                     {projeto.description}
                   </p>
 

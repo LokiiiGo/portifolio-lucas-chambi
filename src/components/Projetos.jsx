@@ -58,7 +58,7 @@ function Projetos() {
                       <div className="mx-auto mb-3 rounded-xl bg-black flex items-center justify-center">
                         <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover" />
                       </div>
-                    </div>
+                    </div> 
                   </div>
                 </div> 
 

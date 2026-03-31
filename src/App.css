@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body,
+.bg-animated {
+  /* Adicionei tons intermediários para evitar cortes bruscos */
+  background: linear-gradient(-45deg, #000000, #620000, #5d0000, #9a003b, #5d0000, #000000);
+  background-size: 400% 400%;
+  /* Aumentar para 20s ou 30s torna o movimento menos frenético e mais elegante */
+  animation: gradient 20s ease-in-out infinite;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

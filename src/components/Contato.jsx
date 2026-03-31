@@ -38,7 +38,7 @@ function Contato() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance">
           Vamos conversar?
         </h2>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-400 mb-8 sm:mb-10 max-w-2xl mx-auto text-pretty">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-100 mb-8 sm:mb-10 max-w-2xl mx-auto text-pretty">
           Estou aberto a novos projetos e colaborações. Entre em contato comigo através das redes
           sociais abaixo.
         </p>

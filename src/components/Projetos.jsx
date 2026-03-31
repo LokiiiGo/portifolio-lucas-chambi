@@ -60,7 +60,7 @@ function Projetos() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
 
                 <div className="p-5 sm:p-6 lg:p-8 lg:w-1/2 flex flex-col justify-center">
                   <ul className="flex flex-wrap gap-2 mb-3 sm:mb-4">

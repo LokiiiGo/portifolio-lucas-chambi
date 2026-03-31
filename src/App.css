@@ -10,10 +10,8 @@
 
 body,
 .bg-animated {
-  /* Adicionei tons intermediários para evitar cortes bruscos */
   background: linear-gradient(-45deg, #000000, #620000, #5d0000, #9a003b, #5d0000, #000000);
   background-size: 400% 400%;
-  /* Aumentar para 20s ou 30s torna o movimento menos frenético e mais elegante */
   animation: gradient 20s ease-in-out infinite;
   background-attachment: fixed;
 }

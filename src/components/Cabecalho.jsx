@@ -57,8 +57,7 @@ function Cabecalho() {
       {/* Mobile Navigation */}
       <div
         className={`md:hidden absolute top-full left-0 w-full bg-zinc-950/98 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"
-        }`}
+          isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col p-4 gap-1">
           {navLinks.map((link) => (

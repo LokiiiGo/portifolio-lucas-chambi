@@ -80,7 +80,7 @@ function Habilidades() {
       <section id="sobre" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
 
-        <article className="bg-zinc-900 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
+        <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
             Sou freelancer web com foco em{" "}
             <span className="text-white font-semibold">front-end</span> na criação de interfaces
@@ -107,7 +107,7 @@ function Habilidades() {
             return (
               <div
                 key={hab.title}
-                className={`bg-zinc-900 border border-zinc-800 p-5 sm:p-6 rounded-xl flex flex-col items-center text-center transition-colors ${colors.border}`}
+                className={`bg-zinc-950 border border-zinc-800 p-5 sm:p-6 rounded-xl flex flex-col items-center text-center transition-colors ${colors.border}`}
               >
                 <div className={`${colors.bg} p-3 sm:p-4 rounded-full mb-3 sm:mb-4 ${colors.text}`}>
                   {hab.icon}

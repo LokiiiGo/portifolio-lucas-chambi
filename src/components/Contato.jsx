@@ -50,7 +50,7 @@ function Contato() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-4 bg-zinc-900 border border-zinc-700 rounded-xl hover:border-amber-500 hover:bg-amber-500/10 transition-all duration-300 text-base sm:text-lg font-medium"
+              className="text-white inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-4 bg-zinc-950 border border-zinc-700 rounded-xl hover:border-amber-500 hover:bg-amber-500/10 transition-all duration-300 text-base sm:text-lg font-medium"
             >
               {link.icon}
               {link.label}

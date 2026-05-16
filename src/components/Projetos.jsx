@@ -47,7 +47,7 @@ function Projetos() {
           {projetos.map((projeto, index) => (
             <article
               key={projeto.title}
-              className="group bg-zinc-900 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
+              className="group bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
             >
               <div
                 className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
@@ -55,7 +55,7 @@ function Projetos() {
                 <div className="lg:w-1/2 overflow-hidden">
                   <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
                     <div className="text-center p-4">
-                      <div className="mx-auto mb-3 rounded-xl bg-black flex items-center justify-center">
+                      <div className="mx-auto mb-3 rounded-xl bg-zinc-950 flex items-center justify-center">
                         <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover" />
                       </div>
                     </div> 

@@ -5,14 +5,14 @@ const projetos = [
     title: "Blog de Programação",
     description: "Introdução ao Mundo da Programação. Uma plataforma focada em ensinar conceitos básicos para iniciantes.",
     techs: ["HTML", "CSS", "JS", "TailwindCSS"],
-    image: "./programacao-blog.png",
+    image: "./blog-programacao.png",
     link: "https://github.com/LokiiiGo/programacao-blog",
   },
   {
     title: "Simple Calculator",
     description: "Uma calculadora simples construida com Next.js e estilizada com TailwindCSS, oferecendo uma interface limpa e funcional para operações matemáticas básicas.",
     techs: ["NextJS", "TailwindCSS"],
-    image: "./simple-calculator.png",
+    image: "./calculadora-simples.png",
     link: "https://github.com/LokiiiGo/simple-calculator",
   },
   {

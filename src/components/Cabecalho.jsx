@@ -3,11 +3,11 @@
 import { useState } from "react"
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#sobre", label: "Sobre" },
-  { href: "#habilidades", label: "Habilidades" },
-  { href: "#projetos", label: "Projetos" },
-  { href: "#contato", label: "Contato" },
+  { href: "#home", label: "Home", },
+  { href: "#sobre", label: "Sobre", },
+  { href: "#habilidades", label: "Habilidades", },
+  { href: "#projetos", label: "Projetos", },
+  { href: "#contato", label: "Contato", },
 ]
 
 function Cabecalho() {
@@ -25,7 +25,7 @@ function Cabecalho() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 lg:gap-8 items-center">
           {navLinks.map((link) => (
-            <li key={link.href} className="text-zinc-300">
+            <li key={link.href} className=" text-zinc-300">
               <a
                 href={link.href}
                 className="text-white hover:text-amber-500 text-sm lg:text-base"
@@ -56,8 +56,7 @@ function Cabecalho() {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-zinc-950/98 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden absolute top-full left-0 w-full bg-zinc-950/98 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col p-4 gap-1">
           {navLinks.map((link) => (

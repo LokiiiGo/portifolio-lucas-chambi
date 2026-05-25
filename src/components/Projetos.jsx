@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 const projetos = [
   {
     title: "Blog de Programação",
@@ -39,64 +41,72 @@ function Projetos() {
   return (
     <section id="projetos" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 font-bold text-center">
-          Meus projetos
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 font-bold text-center">
+            Meus projetos
+          </h2>
 
-        <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10">
-          {projetos.map((projeto, index) => (
-            <article
-              key={projeto.title}
-              className="group bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
-            >
-              <div
-                className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10">
+            {projetos.map((projeto, index) => (
+              <article
+                key={projeto.title}
+                className="group bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
               >
-                <div className="lg:w-1/2 overflow-hidden">
-                  <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-                    <div className="text-center p-4">
-                      <div className="mx-auto mb-3 rounded-xl bg-zinc-950 flex items-center justify-center">
-                        <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover" />
+                <div
+                  className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+                >
+                  <div className="lg:w-1/2 overflow-hidden">
+                    <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">
+                      <div className="text-center p-4">
+                        <div className="mx-auto mb-3 rounded-xl bg-zinc-950 flex items-center justify-center">
+                          <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover" />
+                        </div>
                       </div>
-                    </div> 
+                    </div>
                   </div>
-                </div> 
 
-                <div className="p-5 sm:p-6 lg:p-8 lg:w-1/2 flex flex-col justify-center">
-                  <ul className="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                    {projeto.techs.map((tech) => (
-                      <li
-                        key={tech}
-                        className="text-xs font-semibold bg-red-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-amber-500/20"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="p-5 sm:p-6 lg:p-8 lg:w-1/2 flex flex-col justify-center">
+                    <ul className="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                      {projeto.techs.map((tech) => (
+                        <li
+                          key={tech}
+                          className="text-xs font-semibold bg-red-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-amber-500/20"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
 
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-foreground">
-                    {projeto.title}
-                  </h3>
-                  <p className="text-zinc-100 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
-                    {projeto.description}
-                  </p>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-foreground">
+                      {projeto.title}
+                    </h3>
+                    <p className="text-zinc-100 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                      {projeto.description}
+                    </p>
 
-                  <a
-                    href={projeto.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black inline-flex items-center justify-center gap-2 bg-zinc-100 font-bold py-2.5 sm:py-3 px-5 sm:px-6 rounded-xl transition-colors w-fit text-sm sm:text-base"
-                  >
-                    Ver projeto
-                    <ExternalLinkIcon className="w-4 h-4" />
-                  </a>
+                    <a
+                      href={projeto.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black inline-flex items-center justify-center gap-2 bg-zinc-100 font-bold py-2.5 sm:py-3 px-5 sm:px-6 rounded-xl transition-colors w-fit text-sm sm:text-base"
+                    >
+                      Ver projeto
+                      <ExternalLinkIcon className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
+              </article>
+            ))}
+          </div>
+        </motion.div>
+      </div >
+    </section >
   )
 }
 

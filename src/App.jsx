@@ -9,7 +9,7 @@ import Rodape from './components/Rodape'
 function App() {
   return (
     <>
-      <div className="oswald">
+      <div>
         <Cabecalho />
         <Sobre />
         <Habilidades />

@@ -1,10 +1,17 @@
+import { motion } from "framer-motion"
+
 function Rodape() {
   return (
-    <footer className="bg-transparent text-white text-center py-6 sm:py-8 px-4">
+    <motion.footer
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="bg-transparent text-white text-center py-8 px-4">
       <p className="text-sm sm:text-base">
-        &copy; {new Date().getFullYear()} Portifólio de Lucas Chambi
+        &copy; {new Date().getFullYear()} Portfólio de Lucas Chambi.
       </p>
-    </footer>
+    </motion.footer>
   )
 }
 

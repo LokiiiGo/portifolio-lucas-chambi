@@ -52,14 +52,14 @@ function Projetos() {
           </h2>
 
 
-          <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10">
-            {projetos.map((projeto, index) => (
+          <div className="grid grid-cols-1 gap-7 sm:gap-8 lg:gap-10">
+            {projetos.map((projeto) => (
               <article
                 key={projeto.title}
-                className="group bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
+                className="bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
               >
                 <div
-                  className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+                  className={`flex flex-col ${projetos.indexOf(projeto) % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
                 >
                   <div className="lg:w-1/2 overflow-hidden">
                     <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">

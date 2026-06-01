@@ -22,7 +22,7 @@ function Cabecalho() {
           LC
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Navegação no Desktop*/}
         <ul className="hidden md:flex gap-6 lg:gap-8 items-center">
           {navLinks.map((link) => (
             <li key={link.href} className=" text-zinc-300">
@@ -36,7 +36,7 @@ function Cabecalho() {
           ))}
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Botão de menu no mobile */}
         <button
           onClick={toggleMenu}
           className="md:hidden p-2 hover:bg-zinc-800 rounded-lg transition-colors text-zinc-300"
@@ -54,7 +54,7 @@ function Cabecalho() {
         </button>
       </nav>
 
-      {/* Mobile Navigation */}
+      {/* Navegação no mobile */}
       <div
         className={`md:hidden absolute top-full left-0 w-full bg-zinc-950/98 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
       >

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 
 const habilidades = [
+  // HTML
   {
     icon: (
       <img src="./assets/html.png" alt="HTML5" className="w-6 h-6 sm:w-8 sm:h-8" />
@@ -9,30 +10,38 @@ const habilidades = [
     description: "Marcação semântica e organização acessível de conteúdo para melhor SEO.",
     color: "amber",
   },
+
+  // CSS
   {
     icon: (
-      <img src="./assets/react.png" alt="React" className="w-6 h-6 sm:w-8 sm:h-8" />
+      <img src="./assets/css.png" alt="css" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
-    title: "React",
+    title: "CSS3",
     description: "Interfaces componentizadas, hooks e gerenciamento de estado eficiente.",
     color: "cyan",
   },
-  {
-    icon: (
-      <img src="./assets/css.png" alt="css3" className="w-6 h-6 sm:w-8 sm:h-8" />
-    ),
-    title: "CSS3",
-    description: "Estilização avancada com layouts flexiveis, animações e design responsivo.",
-    color: "blue",
-  },
+
+  //JavaScript
   {
     icon: (
       <img src="./assets/js.png" alt="JavaScript" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "JavaScript",
-    description: "Interatividade com manipulação do DOM, eventos e criação de efeitos dinâmicos.",
+    description: "Estilização avancada com layouts flexiveis, animações e design responsivo.",
     color: "yellow",
   },
+
+  // React
+  {
+    icon: (
+      <img src="./assets/react.png" alt="React" className="w-6 h-6 sm:w-8 sm:h-8" />
+    ),
+    title: "React",
+    description: "Interatividade com manipulação do DOM, eventos e criação de efeitos dinâmicos.",
+    color: "gray",
+  },
+
+  // TailwindCSS
   {
     icon: (
       <img src="./assets/tailwindcss.png" alt="tailwindcss" className="w-6 h-6 sm:w-8 sm:h-8" />
@@ -41,6 +50,8 @@ const habilidades = [
     description: "Estilização rapida e eficiente com classes utilitárias, responsividade e temas customizáveis.",
     color: "cyan",
   },
+
+  // Next.js
   {
     icon: (
       <img src="./assets/nextjs-icon.png" alt="Next.js" className="w-6 h-6 sm:w-8 sm:h-8" />
@@ -68,6 +79,14 @@ const colorVariants = {
     border: "hover:border-zinc-400/50",
     bg: "bg-zinc-500/10",
   },
+  yellow: {
+    border: "hover:border-yellow-500/50",
+    bg: "bg-yellow-500/10",
+  },
+  gray: {
+    border: "hover:border-gray-500/50",
+    bg: "bg-gray-500/10",
+  }
 }
 
 function Habilidades() {
@@ -85,12 +104,12 @@ function Habilidades() {
 
           <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
             <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
-              Sou freelancer web com foco em{" "}
+              Sou freelancer web com foco em {""}
               <span className="text-white font-semibold">front-end</span> na criação de interfaces
               modernas, responsivas e orientadas a experiência do usuário.
             </p>
             <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300 mt-4">
-              Desenvolvi uma API com operações CRUD para gerenciamento de estoque e
+              Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas de
               streaming, aplicando boas práticas de organização de código e integração entre front e
               back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
             </p>

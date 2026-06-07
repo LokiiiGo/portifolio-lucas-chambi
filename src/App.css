@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
 
-.roboto {
-  font-family: "Roboto", sans-serif;
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 body,
 .bg-animated {
-  background: linear-gradient(-45deg, #000000, #7e0b0b, #5d0000);
+  background: linear-gradient(-45deg, #000000, #9e1717, #5d0000);
   background-size: 400% 400%;
   animation: gradient 20s ease-in-out infinite;
   background-attachment: fixed;

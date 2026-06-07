@@ -28,7 +28,7 @@ function Cabecalho() {
             <li key={link.href} className=" text-zinc-300">
               <a
                 href={link.href}
-                className="text-white hover:text-amber-500 text-sm lg:text-base"
+                className="text-white hover:text-zinc-300 text-sm lg:text-base"
               >
                 {link.label}
               </a>

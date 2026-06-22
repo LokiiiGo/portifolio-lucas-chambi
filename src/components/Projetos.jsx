@@ -5,7 +5,7 @@ const projetos = [
     title: "Blog de Programação",
     description: "Introdução ao Mundo da Programação. Uma plataforma focada em ensinar conceitos básicos para iniciantes.",
     techs: ["HTML", "CSS", "JS", "TailwindCSS"],
-    image: "./blog-programacao.png",
+    image: "./programacao-blog.png",
     link: "https://github.com/LokiiiGo/programacao-blog",
   },
   {

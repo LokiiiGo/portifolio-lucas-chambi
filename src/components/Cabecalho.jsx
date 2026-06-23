@@ -16,7 +16,7 @@ function Cabecalho() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md px-4 sm:px-6 lg:px-10 py-4 border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 bg-zinc-950/98 backdrop-blur-md px-4 sm:px-6 lg:px-10 py-4 border-b border-white/10">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="text-white text-xl font-bold">
           <img src="./assets/icone-portifolio.png" alt="ícone de portífolio" className="w-10 h-10" />

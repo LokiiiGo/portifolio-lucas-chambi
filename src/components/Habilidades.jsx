@@ -27,7 +27,7 @@ const habilidades = [
       <img src="./assets/js.png" alt="JavaScript" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "JavaScript",
-    description: "Estilização avancada com layouts flexiveis, animações e design responsivo.",
+    description: "Estilização avançada com layouts flexiveis, animações e design responsivo.",
     color: "yellow",
   },
 
@@ -47,7 +47,7 @@ const habilidades = [
       <img src="./assets/tailwindcss.png" alt="tailwindcss" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "TailwindCSS",
-    description: "Estilização rapida e eficiente com classes utilitárias, responsividade e temas customizáveis.",
+    description: "Estilização rápida e eficiente com classes utilitárias, responsividade e temas customizáveis.",
     color: "cyan",
   },
 

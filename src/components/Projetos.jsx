@@ -3,21 +3,21 @@
 const projetos = [
   {
     title: "Blog de Programação",
-    description: "Introdução ao Mundo da Programação. Uma plataforma focada em ensinar conceitos básicos para iniciantes.",
+    description: "Uma plataforma focada em ensinar conceitos básicos para iniciantes.",
     techs: ["HTML", "JS", "TailwindCSS"],
     image: "./programacao-blog.png",
     link: "https://github.com/LokiiiGo/programacao-blog",
   },
   {
     title: "Simple Calculator",
-    description: "Uma calculadora simples construida com Next.js e estilizada com TailwindCSS, oferecendo uma interface limpa e funcional para operações matemáticas básicas.",
+    description: "Uma calculadora simples que oferece uma interface limpa e funcional para operações matemáticas básicas.",
     techs: ["NextJS", "TailwindCSS"],
     image: "./calculadora-simples.png",
     link: "https://github.com/LokiiiGo/simple-calculator",
   },
   {
     title: "Stokki Life",
-    description: "Gerenciamento de estoque para pequenos negocios, com funcionalidades de cadastro de produtos, controle de estoque e geração de relatórios.",
+    description: "Gerenciamento de estoque para pequenos negócios, com funcionalidades de cadastro de produtos, controle de estoque e geração de relatórios.",
     techs: ["Laravel", "TailwindCSS", "MySQL"],
     image: "./stokki-life.png",
     link: "https://github.com/stokki-life-tcc",

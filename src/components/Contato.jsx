@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+/* import { motion } from "framer-motion" */
 
 const links = [
   /* LinkedIn */
@@ -42,36 +42,36 @@ function Contato() {
       className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white min-h-[60vh] flex items-center"
     >
       <div className="max-w-4xl mx-auto text-center w-full">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance">
-            Vamos conversar?
-          </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-100 mb-8 sm:mb-10 max-w-2xl mx-auto text-pretty">
-            Estou aberto a novos projetos e colaborações. Entre em contato comigo através das redes
-            sociais abaixo.
-          </p>
+        >  */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance">
+          Vamos conversar?
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-100 mb-8 sm:mb-10 max-w-2xl mx-auto text-pretty">
+          Estou aberto a novos projetos e colaborações. Entre em contato comigo através das redes
+          sociais abaixo.
+        </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-            {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-4 bg-zinc-950 border border-zinc-700 rounded-xl hover:border-white hover:bg-amber-500/10 transition-all duration-300 text-base sm:text-lg font-medium"
-              >
-                {link.icon}
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </section>
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-4 bg-zinc-950 border border-zinc-700 rounded-xl hover:border-white hover:bg-amber-500/10 transition-all duration-300 text-base sm:text-lg font-medium"
+            >
+              {link.icon}
+              {link.label}
+            </a>
+          ))}
+        </div>
+        {/* </motion.div> */}
+      </div >
+    </section >
   )
 }
 

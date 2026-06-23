@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+/* import { motion } from "framer-motion" */
 
 const habilidades = [
   // HTML
@@ -94,59 +94,59 @@ function Habilidades() {
     <div className="text-white">
       {/* Sobre Mim */}
       <section id="sobre" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-        >
-          <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
+        > */}
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
 
-          <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
-            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
-              Sou freelancer web com foco em {""}
-              <span className="text-white font-semibold">front-end</span> na criação de interfaces
-              modernas, responsivas e orientadas a experiência do usuário.
-            </p>
-            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300 mt-4">
-              Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas de
-              streaming, aplicando boas práticas de organização de código e integração entre front e
-              back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
-            </p>
-          </article>
-        </motion.div>
+        <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
+            Sou freelancer web com foco em {""}
+            <span className="text-white font-semibold">front-end</span> na criação de interfaces
+            modernas, responsivas e orientadas a experiência do usuário.
+          </p>
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300 mt-4">
+            Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas de
+            streaming, aplicando boas práticas de organização de código e integração entre front e
+            back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
+          </p>
+        </article>
+        {/*</motion.div>*/}
       </section>
 
       {/* Habilidades */}
       <section id="habilidades" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-8 sm:mb-12 text-center">
-            Minhas habilidades
-          </h2>
+        {/* <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    > */}
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-8 sm:mb-12 text-center">
+          Minhas habilidades
+        </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
-            {habilidades.map((hab) => {
-              const colors = colorVariants[hab.color] || colorVariants.white
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+          {habilidades.map((hab) => {
+            const colors = colorVariants[hab.color] || colorVariants.white
 
-              return (
-                <div
-                  key={hab.title}
-                  className={`bg-zinc-950 border border-zinc-800 p-5 sm:p-6 rounded-xl flex flex-col items-center text-center transition-colors ${colors.border}`}
-                >
-                  <div className={`${colors.bg} p-3 sm:p-4 rounded-full mb-3 sm:mb-4 ${colors.text}`}>
-                    {hab.icon}
-                  </div>
-                  <h3 className={`font-bold text-lg sm:text-xl mb-2 ${colors.text}`}>{hab.title}</h3>
-                  <p className="text-zinc-400 text-sm sm:text-base">{hab.description}</p>
+            return (
+              <div
+                key={hab.title}
+                className={`bg-zinc-950 border border-zinc-800 p-5 sm:p-6 rounded-xl flex flex-col items-center text-center transition-colors ${colors.border}`}
+              >
+                <div className={`${colors.bg} p-3 sm:p-4 rounded-full mb-3 sm:mb-4 ${colors.text}`}>
+                  {hab.icon}
                 </div>
-              )
-            })}
-          </div>
-        </motion.div>
+                <h3 className={`font-bold text-lg sm:text-xl mb-2 ${colors.text}`}>{hab.title}</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">{hab.description}</p>
+              </div>
+            )
+          })}
+        </div>
+        {/* </motion.div> */}
       </section>
     </div>
   )

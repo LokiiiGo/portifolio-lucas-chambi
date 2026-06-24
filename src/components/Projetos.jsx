@@ -76,7 +76,7 @@ function Projetos() {
                     {projeto.techs.map((tech) => (
                       <li
                         key={tech}
-                        className="text-xs font-semibold bg-red-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-red-500/20"
+                        className="text-xs font-semibold bg-rose-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-red-500/20"
                       >
                         {tech}
                       </li>

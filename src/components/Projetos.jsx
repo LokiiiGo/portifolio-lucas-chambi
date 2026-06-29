@@ -20,13 +20,13 @@ const projetos = [
     description: "Gerenciamento de estoque para pequenos negócios, com funcionalidades de cadastro de produtos, controle de estoque e geração de relatórios.",
     techs: ["Laravel", "TailwindCSS", "MySQL"],
     image: "./stokki-life.png",
-    link: "https://github.com/stokki-life-tcc",
+    link: "https://github.com/LokiiiGo/stokki-life",
   },
   {
     title: "Subtrack",
     description: "Aplicativo mobile para gerenciamento de assinaturas, permitindo acompanhar gastos mensais e receber lembretes de vencimento.",
     techs: ["React Native", "Async Storage"],
-    image: "./subtrack.png",
+    image: "./subtrack-mobile.png",
     link: "https://github.com/LokiiiGo/SubTrack",
   },
 ]

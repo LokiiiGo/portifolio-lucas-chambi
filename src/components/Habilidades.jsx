@@ -94,11 +94,6 @@ function Habilidades() {
     <div className="text-white">
       {/* Sobre Mim */}
       <section id="sobre" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-        {/* <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        > */}
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
 
         <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 rounded-xl max-w-3xl shadow-xl">
@@ -113,17 +108,10 @@ function Habilidades() {
             back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
           </p>
         </article>
-        {/*</motion.div>*/}
       </section>
 
       {/* Habilidades */}
       <section id="habilidades" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
-        {/* <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-    > */}
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-8 sm:mb-12 text-center">
           Minhas habilidades
         </h2>
@@ -146,7 +134,6 @@ function Habilidades() {
             )
           })}
         </div>
-        {/* </motion.div> */}
       </section>
     </div>
   )

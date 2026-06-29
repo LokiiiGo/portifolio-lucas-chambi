@@ -54,11 +54,6 @@ function Contato() {
       className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white min-h-[60vh] flex items-center"
     >
       <div className="max-w-4xl mx-auto text-center w-full">
-        {/* <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >  */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance">
           Vamos conversar?
         </h2>
@@ -81,7 +76,6 @@ function Contato() {
             </a>
           ))}
         </div>
-        {/* </motion.div> */}
       </div >
     </section >
   )

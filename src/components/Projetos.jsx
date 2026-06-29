@@ -41,12 +41,6 @@ function Projetos() {
   return (
     <section id="projetos" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-6xl mx-auto">
-        {/*
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        > */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 font-bold text-center">
           Meus projetos
         </h2>
@@ -104,7 +98,6 @@ function Projetos() {
             </article>
           ))}
         </div>
-        {/* </motion.div>*/}
       </div >
     </section >
   )

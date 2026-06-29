@@ -108,8 +108,8 @@ function Habilidades() {
             modernas, responsivas e orientadas a experiência do usuário.
           </p>
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300 mt-4">
-            Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas de
-            streaming, aplicando boas práticas de organização de código e integração entre front e
+            Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas digitais, 
+            aplicando boas práticas de organização de código e integração entre front e
             back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
           </p>
         </article>

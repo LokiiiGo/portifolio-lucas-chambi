@@ -23,7 +23,6 @@ A interface é montada em componentes reutilizáveis, facilitando evolução e m
 - **Vite**
 - **Tailwind CSS**
 - **ESLint** (qualidade de código)
-- **framer-motion** (animações)
 - **lucide-react** (ícones)
 
 ## Estrutura do projeto

@@ -1,5 +1,3 @@
-/* import { motion } from "framer-motion" */
-
 function Sobre() {
   return (
     <section

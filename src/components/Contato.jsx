@@ -30,7 +30,7 @@ const links = [
       </svg>
     ),
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/lucas-chambi-6677ba333/",
+    href: "https://www.linkedin.com/in/lucaschambi/",
   },
   
   /* Whatsapp */
